@@ -63,7 +63,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/activity1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Activity" />
@@ -73,37 +73,7 @@
                 android:layout_height="19dp" />
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Activity" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="19dp" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Activity" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="19dp" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Activity" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="19dp" />
-
-            <Button
-                android:id="@+id/button3"
+                android:id="@+id/activity2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Activity" />
@@ -113,7 +83,7 @@
                 android:layout_height="19dp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/activity3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Activity" />
@@ -123,7 +93,7 @@
                 android:layout_height="19dp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/activity4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Activity" />
@@ -133,7 +103,7 @@
                 android:layout_height="19dp" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/activity5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Activity" />
@@ -143,7 +113,7 @@
                 android:layout_height="19dp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/activity6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Activity" />
@@ -153,7 +123,47 @@
                 android:layout_height="19dp" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/activity7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activity" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="19dp" />
+
+            <Button
+                android:id="@+id/activity8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activity" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="19dp" />
+
+            <Button
+                android:id="@+id/activity9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activity" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="19dp" />
+
+            <Button
+                android:id="@+id/activity10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activity" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="19dp" />
+
+            <Button
+                android:id="@+id/activity11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Activity" />
@@ -162,7 +172,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/languagebutton"
         android:layout_width="87dp"
         android:layout_height="47dp"
         android:layout_marginTop="16dp"
