@@ -21,9 +21,9 @@ her biri için activity setuplamamız lazım.
 	- For all activities, every point received should give positive feedback.
 
 
-3-) Activityler arası geçiş sağlanıcak.
+3-) Activityler arası geçiş sağlanıcak. DONE 
 4-) Register ve Point system için dataları save etmemiz lazım.
 5-) 2 Farklı dil gereksinimi yerine getirilecek,
-6-) Tasarımlar birbirine benzetilecek
-7-) Main menuden aktivitelere geçiş 3 click değilse 3 click yapılacak
+6-) Tasarımlar birbirine benzetilecek.
+7-) Main menuden aktivitelere geçiş 3 click değilse 3 click yapılacak. DONE
 8-) Program yavaşsa optimizasyonla response time 1 saniyenin altına indirilecek.
