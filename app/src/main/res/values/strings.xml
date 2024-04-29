@@ -1,7 +1,7 @@
 <resources>
     <!-- LOG IN -->
-    <string name="log_to_menu">Go To Menu</string>
     <string name="log_quit">Quit</string>
+    <string name="log_to_menu">Go to Menu</string>
     <string name="log_login">Login</string>
     <string name="or_register_here"><u>or register here</u></string>
     <string name="log_username">Username</string>

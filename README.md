@@ -27,3 +27,7 @@ her biri için activity setuplamamız lazım.
 6-) Tasarımlar birbirine benzetilecek.
 7-) Main menuden aktivitelere geçiş 3 click değilse 3 click yapılacak. DONE
 8-) Program yavaşsa optimizasyonla response time 1 saniyenin altına indirilecek.
+
+
+Extra Not: 
+- Dil seçimi için "Menu" kullanılabilir (lesson 4 user interface)
