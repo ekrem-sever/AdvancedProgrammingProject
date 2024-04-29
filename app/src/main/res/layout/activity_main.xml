@@ -161,13 +161,13 @@
 
     <Button
         android:id="@+id/languagebutton"
-        android:layout_width="87dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/menu_language"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

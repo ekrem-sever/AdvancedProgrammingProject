@@ -2,6 +2,8 @@ package com.example.advancedprogrammingproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -26,6 +28,15 @@ public class MainActivity extends AppCompatActivity {
         });
         configureLogOutButton();
         configureActivityButtons();
+        registerForContextMenu(findViewById(R.id.languagebutton));
+    }
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v,
+                                    ContextMenu.ContextMenuInfo menuInfo) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.language_contextmenu, menu);
+        super.onCreateContextMenu(menu, v, menuInfo);
+
     }
     public void configureLogOutButton(){
 
