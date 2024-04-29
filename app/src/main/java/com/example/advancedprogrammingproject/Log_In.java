@@ -2,6 +2,8 @@ package com.example.advancedprogrammingproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +19,7 @@ import org.w3c.dom.Text;
 
 public class Log_In extends AppCompatActivity {
 
+    private Button langButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +31,12 @@ public class Log_In extends AppCompatActivity {
             return insets;
         });
 
+        langButton = findViewById(R.id.log_lang);
         configureMenuButton();
         configureQuitButton();
         configureRegisterClick();
-    }
 
+    }
     public void configureRegisterClick(){
         TextView register = (TextView) findViewById(R.id.register);
 

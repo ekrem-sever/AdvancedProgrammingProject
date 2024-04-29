@@ -28,16 +28,9 @@ public class MainActivity extends AppCompatActivity {
         });
         configureLogOutButton();
         configureActivityButtons();
-        registerForContextMenu(findViewById(R.id.languagebutton));
-    }
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v,
-                                    ContextMenu.ContextMenuInfo menuInfo) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.language_contextmenu, menu);
-        super.onCreateContextMenu(menu, v, menuInfo);
 
     }
+
     public void configureLogOutButton(){
 
         Button backbutton = (Button) findViewById(R.id.logOutButton);
