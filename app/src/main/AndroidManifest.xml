@@ -28,9 +28,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Seasons"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="false" />
     </application>

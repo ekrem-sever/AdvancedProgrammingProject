@@ -24,18 +24,8 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        configureSeasonButton();
         configureLogOutButton();
         configureActivityButtons();
-    }
-    public void configureSeasonButton(){
-        Button seasonButton = (Button) findViewById(R.id.seasonButton);
-        seasonButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Seasons.class));
-            }
-        });
     }
     public void configureLogOutButton(){
 

@@ -1,4 +1,26 @@
 <resources>
-    <string name="app_name">AdvancedProgrammingProject</string>
+    <!-- LOG IN -->
+    <string name="log_to_menu">Go To Menu</string>
+    <string name="log_quit">Quit</string>
+    <string name="log_login">Login</string>
     <string name="or_register_here"><u>or register here</u></string>
+    <string name="log_username">Username</string>
+    <string name="log_password">Password</string>
+    <!-- Register -->
+    <!-- empty for now -->
+
+    <!-- Main Menu -->
+    <string name="menu_menu">Main Menu</string>
+    <string name="menu_logout">Log Out</string>
+    <string name="menu_activity">Activity</string>
+    <string name="menu_language">Lang</string>
+    <!-- Example Activity -->
+    <string name="activity_back">Back</string>
+    <string name="activity_current">Current Activity</string>
+    <string name="activity_learn">Learn</string>
+    <string name="activity_play">Play</string>
+
+
+
+    <string name="app_name">AdvancedProgrammingProject</string>
 </resources>
