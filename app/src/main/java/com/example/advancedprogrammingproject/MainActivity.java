@@ -2,9 +2,11 @@ package com.example.advancedprogrammingproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.PopupMenu;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button LangButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +29,19 @@ public class MainActivity extends AppCompatActivity {
         });
         configureLogOutButton();
         configureActivityButtons();
-        configureTRButton();
-        configureUKButton();
+
+        // Language Button and its Popup Menu being configured
+        LangButton = (Button) findViewById(R.id.langButton);
+        configureLangButton(LangButton);
+        PopupMenu langMenu = new PopupMenu(this, LangButton);
+        langMenu.getMenuInflater().inflate(R.menu.langmenu, langMenu.getMenu());
+        langMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+            @Override
+            public boolean OnMenuItemClick(MenuItem item){
+
+            }
+
+        });
     }
 
     public void configureLogOutButton(){
@@ -41,29 +55,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void configureUKButton(){
-        ImageButton ukButton = (ImageButton) findViewById(R.id.languagebutton_uk);
-        ImageButton trButton = (ImageButton) findViewById(R.id.languagebutton_tr);
-        ukButton.setOnClickListener(new View.OnClickListener() {
+    public void configureLangButton(Button langButton){
+        langButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ukButton.setImageAlpha(0);
-                ukButton.setClickable(false);
-                trButton.setImageAlpha(1);
-                trButton.setClickable(true);
-            }
-        });
-    }
-    public void configureTRButton(){
-        ImageButton ukButton = (ImageButton) findViewById(R.id.languagebutton_uk);
-        ImageButton trButton = (ImageButton) findViewById(R.id.languagebutton_tr);
-        trButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                trButton.setImageAlpha(0);
-                trButton.setClickable(false);
-                ukButton.setImageAlpha(1);
-                ukButton.setClickable(true);
+                // open popup menu
             }
         });
     }

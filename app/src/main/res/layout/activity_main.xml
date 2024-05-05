@@ -25,7 +25,7 @@
         android:id="@+id/logOutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="48dp"
         android:layout_marginBottom="16dp"
         android:text="@string/menu_logout"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -160,34 +160,14 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/languagebutton_uk"
-        android:layout_width="98dp"
-        android:layout_height="48dp"
+    <Button
+        android:id="@+id/langButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginBottom="16dp"
-        android:adjustViewBounds="true"
-        android:scaleType="centerInside"
-        android:alpha="1"
-        android:clickable="false"
-        android:contentDescription="Change Language"
+        android:text="Lang"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:src="@drawable/uk_flag" />
-
-    <ImageButton
-        android:id="@+id/languagebutton_tr"
-        android:layout_width="98dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginBottom="16dp"
-        android:adjustViewBounds="true"
-        android:scaleType="centerInside"
-        android:alpha="0"
-        android:clickable="false"
-        android:contentDescription="Change Language"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/tr_flag" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
