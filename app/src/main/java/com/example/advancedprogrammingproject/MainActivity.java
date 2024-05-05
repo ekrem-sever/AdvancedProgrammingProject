@@ -2,11 +2,9 @@ package com.example.advancedprogrammingproject;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         });
         configureLogOutButton();
         configureActivityButtons();
-
+        configureTRButton();
+        configureUKButton();
     }
 
     public void configureLogOutButton(){
@@ -42,6 +41,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void configureUKButton(){
+        ImageButton ukButton = (ImageButton) findViewById(R.id.languagebutton_uk);
+        ImageButton trButton = (ImageButton) findViewById(R.id.languagebutton_tr);
+        ukButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ukButton.setImageAlpha(0);
+                ukButton.setClickable(false);
+                trButton.setImageAlpha(1);
+                trButton.setClickable(true);
+            }
+        });
+    }
+    public void configureTRButton(){
+        ImageButton ukButton = (ImageButton) findViewById(R.id.languagebutton_uk);
+        ImageButton trButton = (ImageButton) findViewById(R.id.languagebutton_tr);
+        trButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                trButton.setImageAlpha(0);
+                trButton.setClickable(false);
+                ukButton.setImageAlpha(1);
+                ukButton.setClickable(true);
+            }
+        });
+    }
+
     public void configureActivityButtons(){
         Button activityButton1 = (Button) findViewById(R.id.activity1);
         activityButton1.setOnClickListener(new View.OnClickListener() {

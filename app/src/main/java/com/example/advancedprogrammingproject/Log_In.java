@@ -31,7 +31,7 @@ public class Log_In extends AppCompatActivity {
             return insets;
         });
 
-        langButton = findViewById(R.id.log_lang);
+
         configureMenuButton();
         configureQuitButton();
         configureRegisterClick();

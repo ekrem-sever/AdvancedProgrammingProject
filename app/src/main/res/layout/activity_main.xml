@@ -32,6 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="315dp"
         android:layout_height="517dp"
         android:layout_marginStart="25dp"
@@ -45,9 +46,9 @@
         app:layout_constraintVertical_bias="0.78">
 
         <LinearLayout
-            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical">
 
             <Button
@@ -159,15 +160,34 @@
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/languagebutton"
+    <ImageButton
+        android:id="@+id/languagebutton_uk"
         android:layout_width="98dp"
         android:layout_height="48dp"
         android:layout_marginStart="48dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/menu_language"
-        android:textSize="14sp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:alpha="1"
+        android:clickable="false"
+        android:contentDescription="Change Language"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/uk_flag" />
+
+    <ImageButton
+        android:id="@+id/languagebutton_tr"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:alpha="0"
+        android:clickable="false"
+        android:contentDescription="Change Language"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/tr_flag" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
