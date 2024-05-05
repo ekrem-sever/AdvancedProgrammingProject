@@ -1,0 +1,4 @@
+First, add 2 icons to correct directories.
+Then choose english as standart language and add that icon to the button.
+After that make the button change the language to the second one everytime it is pressed.
+Also change the icon of the button to the current language.
