@@ -1,6 +1,8 @@
 package com.example.advancedprogrammingproject;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +52,15 @@ public class MainActivity extends AppCompatActivity {
                 else if(id == R.id.ENG_item){
                     Toast.makeText(MainActivity.this, "ENG Clicked..", Toast.LENGTH_SHORT).show();
                     // ENG language selected
+                    // Possible language selection method.
+                    // Locale locale2 = new Locale("en");
+                    // Locale.setDefault(locale2);
+
+                    // Configuration config2 = new Configuration();
+                    // config2.setLocale(locale2);
+
+                    // getBaseContext().getResources().updateConfiguration(
+                    //        config2,getBaseContext().getResources().getDisplayMetrics());
                 }
                 return false;
             }
