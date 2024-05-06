@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="TR" />
-    <item android:title="ENG" />
+    <item android:id="@+id/TR_item"
+        android:title="TR" />
+    <item android:id="@+id/ENG_item"
+        android:title="ENG" />
 </menu>

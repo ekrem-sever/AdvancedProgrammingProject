@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,16 +33,27 @@ public class MainActivity extends AppCompatActivity {
 
         // Language Button and its Popup Menu being configured
         LangButton = (Button) findViewById(R.id.langButton);
-        configureLangButton(LangButton);
+
         PopupMenu langMenu = new PopupMenu(this, LangButton);
         langMenu.getMenuInflater().inflate(R.menu.langmenu, langMenu.getMenu());
-        langMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+
+        langMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
-            public boolean OnMenuItemClick(MenuItem item){
-
+            public boolean onMenuItemClick(MenuItem item) {
+                int id = item.getItemId();
+                if(id == R.id.TR_item){
+                    Toast.makeText(MainActivity.this, "TR Clicked..", Toast.LENGTH_SHORT).show();
+                    // TR language selected
+                }
+                else if(id == R.id.ENG_item){
+                    Toast.makeText(MainActivity.this, "ENG Clicked..", Toast.LENGTH_SHORT).show();
+                    // ENG language selected
+                }
+                return false;
             }
-
         });
+
+        configureLangButton(LangButton, langMenu);
     }
 
     public void configureLogOutButton(){
@@ -55,11 +67,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void configureLangButton(Button langButton){
+    public void configureLangButton(Button langButton, PopupMenu langMenu){
         langButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // open popup menu
+                langMenu.show();
             }
         });
     }
