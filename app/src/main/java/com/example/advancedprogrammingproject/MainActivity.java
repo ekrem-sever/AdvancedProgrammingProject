@@ -1,6 +1,8 @@
 package com.example.advancedprogrammingproject;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -22,6 +25,7 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
 
     Button LangButton;
+    SharedPreferences sp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        sp = getApplicationContext().getSharedPreferences("users", Context.MODE_PRIVATE);
         configureLogOutButton();
         configureActivityButtons();
 
@@ -67,15 +72,24 @@ public class MainActivity extends AppCompatActivity {
         });
 
         configureLangButton(LangButton, langMenu);
+        configureUserWelcome();
     }
 
+
+    public void configureUserWelcome(){
+        TextView welcome = findViewById(R.id.welcome_text);
+        //set welcome from username
+        String username = sp.getString("logged_user","");
+        welcome.setText(("Welcome, "+username));
+    }
     public void configureLogOutButton(){
 
         Button backbutton = (Button) findViewById(R.id.logOutButton);
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // might need to add extra functionality here to succesfully log out of the user!!!!!!!!!!!!!!!!!!!!!!
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putString("logged_user", "null");
                 finish();
             }
         });

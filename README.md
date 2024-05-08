@@ -18,16 +18,12 @@ her biri için activity setuplamamız lazım.
 	- Similar picture finding
 	- A ball that imitates how people read lines.
 	- For all activities, a learning part and a playing part. !!
-	- For all activities, every point received should give positive feedback.
+	- For all activities, every point received should give positive feedback. (On every success, show affirmative sentences (around 5 different sentences would be enough)
 
 
 3-) Activityler arası geçiş sağlanıcak. DONE 
-4-) Register ve Point system için dataları save etmemiz lazım.
+4-) Register için dataları save etmemiz lazım. DONE
 5-) 2 Farklı dil gereksinimi yerine getirilecek DONE
 6-) Tasarımlar birbirine benzetilecek.
 7-) Main menuden aktivitelere geçiş 3 click değilse 3 click yapılacak. DONE
 8-) Program yavaşsa optimizasyonla response time 1 saniyenin altına indirilecek. PARTLY DONE
-
-
-Extra Not: 
-- Dil seçimi için "Menu" kullanılabilir (lesson 4 user interface)
