@@ -6,12 +6,12 @@ Bu hafta için proje planları:
 1-) Öncelikle kullanacağımız activity sayısını belirleyip
 her biri için activity setuplamamız lazım.
 2-) Basit activityleri teker teker yapmaya başlamamız lazım.
-	- Analog Clock and Digital Clock
+	- Analog Clock and Digital Clock - BERK
 	- Seasons (with animations (?))
-	- Counting days of week
-	- Counting months of year
-	- Remember digits on screen
-	- Remember digits on screen (backwards)
+	- Counting days of week - BERK
+	- Counting months of year - BERK
+	- Remember digits on screen - DAĞHAN
+	- Remember digits on screen (backwards) - DAĞHAN
 	- Word spelling program (Needs 2 different wordlist for both languages)
 	- Directions
 	- Multiplication
