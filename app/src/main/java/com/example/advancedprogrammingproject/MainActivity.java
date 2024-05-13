@@ -53,19 +53,25 @@ public class MainActivity extends AppCompatActivity {
                 if(id == R.id.TR_item){
                     Toast.makeText(MainActivity.this, "TR Clicked..", Toast.LENGTH_SHORT).show();
                     // TR language selected
+                    Locale locale2 = new Locale("tr");
+                    Locale.setDefault(locale2);
+
+                    Configuration config2 = new Configuration();
+                    config2.setLocale(locale2);
+
+                    getBaseContext().getResources().updateConfiguration(config2,getBaseContext().getResources().getDisplayMetrics());
                 }
                 else if(id == R.id.ENG_item){
                     Toast.makeText(MainActivity.this, "ENG Clicked..", Toast.LENGTH_SHORT).show();
                     // ENG language selected
                     // Possible language selection method.
-                    // Locale locale2 = new Locale("en");
-                    // Locale.setDefault(locale2);
+                    Locale locale2 = new Locale("en");
+                    Locale.setDefault(locale2);
 
-                    // Configuration config2 = new Configuration();
-                    // config2.setLocale(locale2);
+                    Configuration config2 = new Configuration();
+                    config2.setLocale(locale2);
 
-                    // getBaseContext().getResources().updateConfiguration(
-                    //        config2,getBaseContext().getResources().getDisplayMetrics());
+                    getBaseContext().getResources().updateConfiguration(config2,getBaseContext().getResources().getDisplayMetrics());
                 }
                 return false;
             }
