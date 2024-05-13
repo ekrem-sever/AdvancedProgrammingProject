@@ -4,12 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -46,37 +44,45 @@ public class MainActivity extends AppCompatActivity {
         PopupMenu langMenu = new PopupMenu(this, LangButton);
         langMenu.getMenuInflater().inflate(R.menu.langmenu, langMenu.getMenu());
 
+
         langMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
+                Locale locale2 ;
+
                 int id = item.getItemId();
                 if(id == R.id.TR_item){
                     Toast.makeText(MainActivity.this, "TR Clicked..", Toast.LENGTH_SHORT).show();
                     // TR language selected
-                    Locale locale2 = new Locale("tr");
+                    locale2 = new Locale("tr");
                     Locale.setDefault(locale2);
 
                     Configuration config2 = new Configuration();
                     config2.setLocale(locale2);
 
                     getBaseContext().getResources().updateConfiguration(config2,getBaseContext().getResources().getDisplayMetrics());
+
                 }
                 else if(id == R.id.ENG_item){
                     Toast.makeText(MainActivity.this, "ENG Clicked..", Toast.LENGTH_SHORT).show();
                     // ENG language selected
                     // Possible language selection method.
-                    Locale locale2 = new Locale("en");
+                    locale2 = new Locale("en");
                     Locale.setDefault(locale2);
 
                     Configuration config2 = new Configuration();
                     config2.setLocale(locale2);
 
                     getBaseContext().getResources().updateConfiguration(config2,getBaseContext().getResources().getDisplayMetrics());
+
                 }
+
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
                 return false;
             }
         });
-
         configureLangButton(LangButton, langMenu);
         configureUserWelcome();
     }
@@ -106,9 +112,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 langMenu.show();
             }
-        });
+        }
+        );
     }
-
     public void configureActivityButtons(){
         Button activityButton1 = (Button) findViewById(R.id.activity1);
         activityButton1.setOnClickListener(new View.OnClickListener() {
@@ -117,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ExampleActivity.class));
             }
         });
+
         Button activityButton2 = (Button) findViewById(R.id.activity2);
         activityButton2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -188,5 +195,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }

@@ -6,6 +6,7 @@
     <string name="or_register_here">ya da buradan kayıt ol</string>
     <string name="log_username">Kullanıcı adı</string>
     <string name="log_password">Şifre</string>
+    <string name="reg_register">Kaydol</string>
     <string name="menu_menu">Ana Menü</string>
     <string name="menu_logout">Çıkış Yap</string>
     <string name="menu_activity">Aktivite</string>
@@ -15,5 +16,6 @@
     <string name="activity_learn">Öğren</string>
     <string name="activity_play">Oyna</string>
     <string name="app_name">AdvancedProgrammingProject</string>
+    <string name="log_log">Giriş</string>
     <string name="reg_tolog">Giriş Ekranına Dön</string>
 </resources>
