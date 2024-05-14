@@ -18,4 +18,5 @@
     <string name="app_name">AdvancedProgrammingProject</string>
     <string name="log_log">Giriş</string>
     <string name="reg_tolog">Giriş Ekranına Dön</string>
+    <string name="log_textPassword">Parola giriniz</string>
 </resources>

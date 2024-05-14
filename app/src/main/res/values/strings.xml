@@ -26,4 +26,5 @@
 
 
     <string name="app_name">AdvancedProgrammingProject</string>
+    <string name="log_textPassword">textPassword</string>
 </resources>
